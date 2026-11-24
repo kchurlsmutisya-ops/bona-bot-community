@@ -38,6 +38,19 @@ python -m bona_bot
 Run from this directory. Alternatively, install the project with
 `python -m pip install .` and then use `bona-bot`.
 
+## Build a Windows executable
+
+On Windows, install the optional packager and run the build script:
+
+```powershell
+python -m pip install ".[build]"
+.\scripts\build-windows.ps1
+```
+
+The script creates `dist\BonaBot.exe` as a single-file, windowed application.
+The executable is not signed; do not distribute it as an official release
+without reviewing and signing the build.
+
 ## Privacy and safety
 
 - Use an API key you are authorized to use. It is sent in the
