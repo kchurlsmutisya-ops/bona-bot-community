@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bona-bot-community"
+version = "0.1.0"
+description = "A clean-room, user-supervised Gemini coding assistant"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Bona Bot Community contributors" }]
+
+[project.scripts]
+bona-bot = "bona_bot.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
